@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["deno.ns", "deno.window", "dom", "esnext"],
+    "strict": true,
+    "types": ["./node_modules/@types/node/index.d.ts"]
+  },
+  "imports": {
+    "@modelcontextprotocol/sdk/": "npm:@modelcontextprotocol/sdk/",
+    "@qlik/api": "npm:@qlik/api",
+    "zod": "npm:zod"
+  },
+  "tasks": {
+    "dev": "deno run --allow-all --env-file=.env src/index.ts"
+  }
+} 

@@ -1,0 +1,25 @@
+# Environment variables
+.env
+
+# Testing files
+src/test.ts
+
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Deno
+.deno/
+
+dist/
+*.log 
