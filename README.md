@@ -46,7 +46,7 @@ Get data from a specific chart
 4. Save the API key securely
 
 ### Configure Environment:
-Create a `.env` file with your Qlik Cloud credentials:
+Create a `.env` file with your Qlik Cloud credentials (see `.env.example` for a template):
 ```env
 QLIK_API_KEY=your_api_key_here
 QLIK_BASE_URL=your_tenant_url
@@ -56,6 +56,19 @@ MAX_TOTAL_ROWS=10000
 REQUEST_DELAY_MS=100
 MAX_RETRIES=3
 RETRY_DELAY_MS=1000
+```
+
+## Usage with Docker
+
+You can also run this MCP server using Docker:
+
+```bash
+# Build the Docker image
+docker build -t qlik-mcp .
+
+# Run the container
+# Make sure to create a .env file first (copy from .env.example)
+docker run --env-file .env qlik-mcp
 ```
 
 ## Usage with Claude Desktop
@@ -146,4 +159,12 @@ deno task dev
 
 ## License
 
-This MCP server is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more details, please see the LICENSE file in the project repository. 
+This MCP server is licensed under the MIT License. This means you are free to use, modify, and distribute the software, subject to the terms and conditions of the MIT License. For more details, please see the LICENSE file in the project repository.
+
+### 📊 <a name="data-platforms"></a>Data Platforms
+
+Data Platforms for data integration, transformation and pipeline orchestration. 
+
+- [JordiNei/mcp-databricks-server](https://github.com/JordiNeil/mcp-databricks-server) - Connect to Databricks API, allowing LLMs to run SQL queries, list jobs, and get job status.
+- [jwaxman19/qlik-mcp](https://github.com/jwaxman19/qlik-mcp) 📇 ☁️ - MCP Server for Qlik Cloud API that enables querying applications, sheets, and extracting data from visualizations with comprehensive authentication and rate limiting support.
+- [keboola/keboola-mcp-server](https://github.com/keboola/keboola-mcp-server) - interact with Keboola Connection Data Platform. This server provides tools for listing and accessing data from Keboola Storage API. 
