@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/jwaxman19-qlik-mcp-badge.png)](https://mseep.ai/app/jwaxman19-qlik-mcp)
+
 # Qlik MCP Server
 
 MCP Server for the Qlik Cloud API, enabling Claude to interact with Qlik applications and extract data from visualizations.
